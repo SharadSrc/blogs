@@ -7,7 +7,7 @@ The main advantage of git is its branching system. It is on these branches that 
 
 In our tutorial for simplicity, let's consider that there are two branches, the `master` branch and the feature branch known as `feature-1`. The main branch is the master branch which contains production code, and the second branch is where modifications will be executed, or new features will be implemented. In the end, if a feature or bug is approved, it will be merged to master.
 
-![Initial_Repository](..\img\Initial_Repository.png)
+![Initial_Repository](https://raw.githubusercontent.com/sharadiiita/blogs/master/Git/img/Initial_Repository.png)
 
 Let's start the demonstration of the merging of two branches with a real example. To start, we require the following.
 
@@ -36,7 +36,7 @@ This is dummy test in 2nd file
 
 Next, clone your newly created repository from GitHub to your system to create a local copy of the code. Clone URL can be retrieved from the `Code` button as below.
 
-![Clone_Repository](..\img\Clone_Repository.png)
+![Clone_Repository](https://raw.githubusercontent.com/sharadiiita/blogs/master/Git/img/Clone_Repository.png)
 
 Use the following command to clone.
 
@@ -139,7 +139,7 @@ A --- B --- C --- D ← master
 
 Below is the updated content of `file1.txt` in the Github repository at the master branch. Notice line 2 is updated, and lines 3 and 4 are newly created.
 
-![File1_Content](..\img\File1_Content.png)
+![File1_Content](https://raw.githubusercontent.com/sharadiiita/blogs/master/Git/img/File1_Content.png)
 
 This can also be validated locally by visualizing your branch history in the command shell in real-time using the below command.
 
@@ -148,7 +148,7 @@ $ git fetch
 $ git log --all --decorate --oneline --graph
 ```
 
-![Commit_Graph](..\img\Commit_Graph.PNG)
+![Commit_Graph](https://raw.githubusercontent.com/sharadiiita/blogs/master/Git/img/Commit_Graph.PNG)
 
 ## Preparing to Merge in Git
 
@@ -222,7 +222,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 Whenever git encounters a conflict, it adds `<<<<<<<` & `=======` to highlight the section that caused the conflict and this need to be resolved manually.
 
-![File1_MergeConflict](..\img\File1_MergeConflict.png)
+![File1_MergeConflict](https://raw.githubusercontent.com/sharadiiita/blogs/master/Git/img/File1_MergeConflict.png)
 
 Once it is decided which part to keep in the final master version of the file, an individual has to remove the irrelevant code (including conflict indicators). Eventually, push the changes to the remote branch as below.
 
@@ -241,7 +241,7 @@ Next, we will verify branch history again with the below command.
 git log --all --decorate --oneline --graph
 ```
 
-![Merge_Graph](..\img\Merge_Graph.png)
+![Merge_Graph](https://raw.githubusercontent.com/sharadiiita/blogs/master/Git/img/Merge_Graph.png)
 
 We can verify git `merge` has created a `Merge Commit` with commit-id as `1acce69` to merge ` feature-1` branch with `origin/master` .
 
