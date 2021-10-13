@@ -1,16 +1,4 @@
-+++
-title = "Best way to merge a git branch into master"
-date = 2021-10-02T02:11:12+01:00
-draft = false
-description = "Git merge is an excellent feature that allows developers to combine different feature branches to the production branch. This tutorial demonstrates various strategies to merge features branches with the master. It will also explore the semantics of merge and rebase as well, so developer choose the best one against the other"
-keywords = ["best way to merge a bit branch into master"]
-inarticle = true
-tags = ["Git", "Git Merge"]
-author = "Sharad Dixit"
-postlink = 5601931
-
-+++
-
+# Best way to merge a git branch into master
 One of the most powerful features of git is the branch creation and merge operation. Git allows users to create a new branch and merge them into development code. This feature improves the development process workflow for multiple projects by encouraging more specific, smaller, and granular tasks.
 
 In this tutorial article, we will discuss different approaches to merge the git feature branch to master.
@@ -303,3 +291,20 @@ Both commands are very useful; however, in different situations, each side has a
 - Simple to use.
 - As an extra merge commit is created every time, it causes commit history to look confusing & dirty.
 - Preserves complete history and chronological order.
+
+
++++
+
+title = "Best way to merge a git branch into master"
+
+date = 2021-10-02T02:11:12+01:00
+
+description = "Git merge is an excellent feature that allows developers to combine different feature branches to the production branch. This tutorial demonstrates various strategies to merge features branches with the master. It will also explore the semantics of merge and rebase as well, so developer choose the best one against the other"
+
+keywords = ["best way to merge a bit branch into master"]
+
+tags = ["Git", "Git Merge"]
+
+author = "Sharad Dixit"
+
++++
